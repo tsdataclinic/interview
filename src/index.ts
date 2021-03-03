@@ -4,6 +4,8 @@ import { Script } from './Script';
 import { Moderator } from './Moderator';
 import { QuestionRouter } from './QuestionRouter';
 import { ResponseConsumer } from './ResponseConsumer';
+import { StateSnapshot} from './StateSnapshot';
+
 export {
     Interview,
     ResponseData,
@@ -11,4 +13,5 @@ export {
     Moderator,
     QuestionRouter,
     ResponseConsumer,
+    StateSnapshot
 };
