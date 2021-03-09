@@ -1,5 +1,7 @@
 # @dataclinic/interview
 
+[![npm version](https://badge.fury.io/js/%40dataclinic%2Finterview.svg)](https://badge.fury.io/js/%40dataclinic%2Finterview)
+
 A small TypeScript library for interactive data collection. Stack-based question routing supports branching based on past answers, looping, and named checkpointing to jump to previous interview states. An interview is defined by:
 
 1. A TypeScript type which models a question to be asked. Simply, this could be an enum whose constants enumerate the possible questions, but there are no restrictions on the nature of this type.
