@@ -6,6 +6,20 @@ A small TypeScript library for interactive data collection. Stack-based question
 2. A `Moderator` which will be called upon to prompt the user for answers to each question as they come up in the interview.
 3. A `Script` which sets up initial state, and routes the user interview through questions based on given responses.
 
+## Installation
+
+You can install the @dataclinic/interview package using either npm or yarn 
+
+```bash
+npm -i @dataclinic/interview
+```
+
+or 
+
+```bash
+yarn add @dataclinic/interview
+```
+
 ## Getting Started
 
 A simple example uses an enum as the question type.
