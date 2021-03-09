@@ -67,7 +67,7 @@ export class Interview<Q> implements QuestionRouter<Q>, ResponseConsumer {
     }
 
     /**
-     * implements ResponseConsumer.answer
+     * Implements ResponseConsumer.answer
      */
     public answer(response: ResponseData): void {
         this.assertNotComplete();
@@ -118,7 +118,6 @@ export class Interview<Q> implements QuestionRouter<Q>, ResponseConsumer {
 
     /**
      * Implements QuestionRouter.skip
-     * TODO: Verify this plays nicely with rewinding
      */
     public skip(response?: ResponseData) {
         this.assertNotComplete();
@@ -152,7 +151,7 @@ export class Interview<Q> implements QuestionRouter<Q>, ResponseConsumer {
         this.logger(
             '[ResponseConsumer.rewind] Rewind called. Destroying current checkpoint'
         );
-        // delete this.checkpoints[this.rewindStack.shift()];
+        // Delete this.checkpoints[this.rewindStack.shift()];
         if (this.rewindStack.length == 0) {
             return;
         }
